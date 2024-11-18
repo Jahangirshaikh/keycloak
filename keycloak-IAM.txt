@@ -1,0 +1,69 @@
+Keycloak integration with Spring Security 6.0
+-------------------------------------------
+
+Keycloak Features - 
+
+1. Single sign-on(SSO) and Single logout
+	Keycloak supports both openID connect which is an Identity layer built on top of OAuth2.0 and xaml which is an saml 2.0
+	protocol for SSO and single logout, This enables users to authenticate once and gain access to multiple applications without
+	needing to log in again.
+		
+2. Identity Brokering and Social login
+	Keycloak can interface with external Identity providers allowing aid to act as Identity Brokers, It also supports social logins
+	like Google, Facebook, Twitter and so on so forth and making it easier for users to authenticate using their existing social media
+	accounts.
+	
+3. User Fedreation
+	Keyclaok can interface with existing user databases such as LDAP or Active directory which allows organizations to use their 
+	existing user base without need to migrate users to a new system.
+	
+4. Fine Grained Aothorization Services
+	Keyclaok supports role based access control which is also called airbag or lb AC allowing administrators to define roles and assign them 
+	to users, It also offers fined grained permissions which means you can specify exactly what actions user can perform.
+	
+5. Centralized Management and Admin Console
+	Keycloak offers a comprehensive admin console for managing users, roles, permissions and so on so forth, It can be used to define and
+	manage security policies centrally.
+
+6. Client Adapters
+	Keycloak provides client adapters for a variety of platforms including Java, Javascript, Nodejs, etc which makes keycloak easier to
+	integrate with diferrent applications.
+	
+7. Standards- Based
+	Keyclaok adheres to current protocols such as openId connect oAuth2.0 and xaml which amkes it compatible with wide range of applications 
+	and services.
+ETC
+
+ADVANTAGES -
+	Open source and supported by wide community
+	Versatilty - supports wide range of applications
+	Scalabilty - supports high userbases and high traffic loads and making it suitable for enterprise level application
+	Security - It is a security focused product offering features like brute force detection, user manager access and password
+				policies to help you keep your applications secure.
+	Customazabilty - Fully customizable
+	Ease of use - offers user-friendly interface for administratorsand it is designed to be easily integrate with diff applications.
+	
+Keycloak terms
+
+1. Realm - 
+	Realm is in keycloak is a way to isolate and manage a set of users, roles, clients and groups, it is essentially a security	
+	domain that manages a group of users their credentials roles and groups. Each Realm has its own dedicated settings like login
+	policies, tokens, user registration,etc. when you set up a keycloak, it creates a default master realm with which you can configure
+	to suit you requirements, you can also create additional realms for different parts of organization or diff app.
+
+2. Clients - 
+	Clients represent applications that can intereact with keycloak for user authentication and user authorization, A client could be a web application, mobile application or even other servers, so each client is configured within a specific realm and can be set up with
+	various access types like creadentials public or viewer only depending on the app need.
+
+3. Client Scopes - 
+	Client Scopes in keycloak define a set of public of default or optional client roles permissions and claims that can be included
+	in the access token or the ID token, they allow you to canetralize and manage common sets of permissions and claims for you clients 
+	so default client scopes are automatically applied to all tokens of the client while optinal client scopes are only applied if they are explicitly requested by the client.
+
+4. Users
+	Users in keycloak represent individuals that can authenticate with keycloak so each user belongs to a specific realm and can be assigned roles and groups, so user profiles in keycloak can contain a range of attributes including usenames, email, firstname, lastname and any custom attributes you wish to define, users can also have credentials like password, OTP or one-time password codes or client certificates.
+	
+5. Groups
+	Groups represent a way to manage common attributes and roles mapping for a set of users, you can use groups to simplify the management of large number of users as it is easier to manage roles and attributes for groups than individual users. user in keycloak can belong to one or more groups and inherit the attributes and roles mapping of those groups.
+	
+	
